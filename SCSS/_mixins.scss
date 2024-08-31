@@ -1,0 +1,26 @@
+@mixin flex-center($display,$align-items) {
+    display: $display;
+    align-items: $align-items;
+}
+
+@mixin button-style($width,$height) {
+    width: $width;
+    height: $height;
+    font-family: $font-family-base;
+    font-size: $base-font-size;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 5px;
+    text-decoration: none;
+  
+}
+
+@mixin title-font($text-align,$font-size-title) {
+    font-family: $font-family-base;
+    font-size: $font-size-title;
+    font-weight: 900;
+    text-align: $text-align;
+
+}
+
