@@ -80,7 +80,7 @@
     @include title-font (center, 40px);
     font-optical-sizing: auto;
     color: $botonvolver;
-    margin-top: 2rem;
+
 }
 
 .botonseguinosflex {
@@ -233,8 +233,40 @@
         padding-left: 0.5rem;
         text-decoration: none;
     }
-    
+
+    @media only screen and (max-width: 600px)
+
+    {
+        justify-content: center;
+        flex-direction: column;
     }
+
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+      
+        .footercontainerindex {
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        }
+
+    }
+
+    @media only screen and (max-width: 600px)
+
+    {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+      
+        .footercontainerindex {
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        }
 }
     .desarrollado {
         @include flex-center (flex, center);
@@ -248,6 +280,342 @@
             font-size: 11px;
         }
     }
+
+.bodyjuguetes {
+    background-color: $bodyjuguetes;
+}
+
+.titulojuguetes {
+    @include title-font (center, 40px); 
+        color: #f37d0e;
+    }
+
+.juguetescontainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+
+    .juguetesgrilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding: 10px;
+
+        .fotosjuguetes {
+           width: 100%;
+           justify-self: center;
+                
+            }
+        .titulosjuguetes {
+                font-family: $font-family-base;
+                font-weight: 600;
+                font-size: 30px;
+                color: #f37d0e;
+                text-align: center;
+        
+            }
+             
+        }
+
+     @media only screen and (max-width: 600px) {
+   
+        .juguetesgrilla{
+                grid-template-columns: 1fr;
+            }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+        .juguetesgrilla{
+            grid-template-columns: repeat(2,1fr);
+        }
+    
+    }
+
+}
+
+    .vermascont2 {
+            display: flex;
+            justify-content: center;
+            margin-top:2rem;
+        
+        .volvertxt2 {
+            @include button-style (6rem,2rem);
+            color: $colorclaro;
+            background-color: $botonvolver;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            padding-bottom: 0.5rem;
+            
+            &:hover {
+                background-color: $bodyindex;
+            }
+        }
+        
+    }
+    .bodynovedades {
+        background-color: $bodynovedades;
+    }
+    .titulonovedades {
+        @include title-font (center, 40px);
+        color: $botonnovedades;
+    }
+
+    .linkcontainer {
+        @include flex-center (flex,center);
+        justify-content: space-evenly;
+        gap: 5rem;
+        flex-wrap: wrap;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
+
+        .imagenlink {
+            width: 15rem;
+            height: 10rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 2px dotted $botonnovedades;
+            border-style: 1rem;
+        }
+        .contenedortituloparrafo {
+            background-color: #6e8daa;
+            padding: 0.3rem;
+            border-radius: 0.5rem;
+        }
+        
+        .subtitulolink {
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 20px;
+            color: #0b1eca;
+            text-align: center;
+        
+            margin-top: 1rem;
+        }
+        
+        .parrafolink {
+            font-family: $colorclaro;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-size: 10px;
+            color: $botonnovedades; 
+            margin: 0 auto;
+            text-align: justify-all;
+            width: 12rem;
+        }
+        
+        .contenedorbtn {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btnlink {
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #12048d;
+            color: $colorclaro;
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 10px;
+            text-align: center;
+            padding: 0.5rem;
+            width: 4rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        
+        }
+        @media only screen and (max-width: 600px) {
+   
+            .linkcontainer{
+                    margin: auto;
+                    flex-direction: column;
+                    justify-items: center;
+                }
+        }
+
+
+    }
+
+    .bodynosotros {
+        background-color: $bodynosotros;
+    }
+
+    .titulonosotros {
+        @include title-font (center, 40px);
+        color: $botonnosotros;
+        padding-bottom: 2rem;
+    }
+
+   
+
+    .carousel {
+        border-radius: 1rem; 
+        overflow: hidden; 
+    }
+    
+    .carousel-item img {
+        border-radius: 1rem; 
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .parrafonosotros {
+        font-family: $font-family-base;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ac0010;
+        margin-top: 2rem;
+        text-align: center;
+
+        .ultimafrase {
+            font-family: $font-family-base;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-size: 22px;
+            color: #50050c;
+        }
+       
+    }
+
+    .imagenflechas {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .bodycontacto {
+        background-color: $bodycontacto;
+    }
+
+    .titulocontacto {
+        @include title-font (center,40px);
+        color: $botoncontacto;
+        padding-bottom: 2rem;
+    }
+    
+    .subtitulocontacto {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        color: $botoncontacto;
+    
+    }
+    
+    .container {
+    @include flex-center (flex,center);
+        justify-content: center;
+        width: 100%;
+        flex: 1; 
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            border: 1px solid #b27ac4;
+            border-radius: 8px;
+            background-color: #cb96ee;
+            box-shadow: 0 4px 8px #0000001a;
+        }
+        
+        .h2form {
+            font-family: $font-family-base;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-variant: small-caps;
+            font-size: 30px;
+            margin: 0 0 15px;
+            color: #5b0f72;;
+        }
+        
+        
+        .label {
+            margin-bottom: 5px;
+            font-family: $font-family-base;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-size: 15px;
+            color: #5b0f72;;
+        }
+        
+        .input, .textarea, .select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #a77ff1;
+            border-radius: 4px;
+        }
+        
+        .button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5b0f72;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #972eee;
+            }
+
+        }
+    }
+    
+    .subtituloubicacion {
+        text-align: center;
+        font-family: $font-family-base;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-size: 20px;
+        color: #5b0f72;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .containerubicacion {
+       @include flex-center (flex,center);
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    
+    .mapa {
+        border-radius: 1rem;
+    }
+
+    .imagenrrss {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+    
+    .ubicacionparrafo {
+        font-family: $font-family-base;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 14px;
+        color: $botoncontacto; 
+       padding-left: 2rem;
+    }
+}
+
+
+
+    
+    
+
+    
+
+
+
+
+
 
 
 
