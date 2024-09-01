@@ -435,13 +435,6 @@
 .linkcontainer .btnlink:hover {
   transform: scale(1.1);
 }
-@media only screen and (max-width: 600px) {
-  .linkcontainer .linkcontainer {
-    margin: auto;
-    flex-direction: column;
-    justify-items: center;
-  }
-}
 
 .bodynosotros {
   background-color: #e6a0ab;
@@ -597,6 +590,14 @@
   font-size: 14px;
   color: #4c2882;
   padding-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .linkcontainer {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

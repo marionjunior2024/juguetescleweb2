@@ -430,17 +430,8 @@
             }
         
         }
-        @media only screen and (max-width: 600px) {
-   
-            .linkcontainer{
-                    margin: auto;
-                    flex-direction: column;
-                    justify-items: center;
-                }
-        }
-
-
-    }
+        
+}
 
     .bodynosotros {
         background-color: $bodynosotros;
@@ -605,7 +596,13 @@
     }
 }
 
-
+@media only screen and (max-width: 600px) {
+    .linkcontainer{
+        margin: 0 auto;
+        flex-direction: column;
+        justify-items: center;
+    }
+}
 
     
     
