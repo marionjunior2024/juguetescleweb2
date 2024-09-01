@@ -1,3 +1,11 @@
+@keyframes cambiaropacidad {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 * {
   scroll-behavior: smooth;
 }
@@ -231,6 +239,7 @@
 .footercontainerindex .imagenfooterjuguetes {
   width: 8rem;
   height: 8rem;
+  animation-delay: 2s;
 }
 .footercontainerindex .redescontainer {
   display: flex;
@@ -315,6 +324,12 @@
 .juguetescontainer .juguetesgrilla .fotosjuguetes {
   width: 100%;
   justify-self: center;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  animation-name: cambiaropacidad;
+}
+.juguetescontainer .juguetesgrilla .fotosjuguetes:hover {
+  opacity: 0.5;
 }
 .juguetescontainer .juguetesgrilla .titulosjuguetes {
   font-family: "Quicksand", sans-serif;
@@ -521,7 +536,7 @@
   border: 1px solid #b27ac4;
   border-radius: 8px;
   background-color: #cb96ee;
-  box-shadow: 0 4px 8px #0000001a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1019607843);
 }
 .container .h2form {
   font-family: "Quicksand", sans-serif;

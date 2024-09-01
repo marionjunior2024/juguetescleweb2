@@ -1,6 +1,15 @@
 @import 'variables';
 @import 'mixins';
 
+@keyframes cambiaropacidad {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
 * {
     scroll-behavior: smooth;
    }
@@ -213,6 +222,7 @@
     .imagenfooterjuguetes {
         width: 8rem;
         height: 8rem;
+        animation-delay: 2s;
     }
 
     .redescontainer {
@@ -223,6 +233,7 @@
     .imagenrrss {
         width: 2rem;
         height: 2rem;
+        
     }
     
     .textorrss {
@@ -305,6 +316,14 @@
         .fotosjuguetes {
            width: 100%;
            justify-self: center;
+           opacity: 1; 
+           transition: opacity 1s ease-in;
+           animation-name: cambiaropacidad;
+           
+           &:hover {
+            opacity: 0.5; 
+          }
+
                 
             }
         .titulosjuguetes {
