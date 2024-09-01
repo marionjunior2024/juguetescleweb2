@@ -521,7 +521,7 @@
   border: 1px solid #b27ac4;
   border-radius: 8px;
   background-color: #cb96ee;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0 4px 8px #0000001a;
 }
 .container .h2form {
   font-family: "Quicksand", sans-serif;
