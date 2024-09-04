@@ -632,41 +632,40 @@
   .header .menuheader .botoncontacto:hover {
     background-color: #b9a7d5;
   }
+  .footercontainerindex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    top: 10rem;
+    flex-wrap: wrap;
+  }
+  .footercontainerindex .imagenfooterjuguetes {
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 2s;
+  }
+  .footercontainerindex .redescontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .footercontainerindex .redescontainer .imagenrrss {
+    width: 2rem;
+    height: 2rem;
+  }
+  .footercontainerindex .redescontainer .textorrss {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 0.5rem;
+    text-decoration: none;
+  }
 }
-.footercontainerindex {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  top: 10rem;
-  flex-wrap: wrap;
-}
-.footercontainerindex .imagenfooterjuguetes {
-  width: 8rem;
-  height: 8rem;
-  animation-delay: 2s;
-}
-.footercontainerindex .redescontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-}
-.footercontainerindex .redescontainer .imagenrrss {
-  width: 2rem;
-  height: 2rem;
-}
-.footercontainerindex .redescontainer .textorrss {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #000000;
-  padding-left: 0.5rem;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 601px) and (max-width: 800px) {
+@media only screen and (max-width: 600px) and (min-width: 601px) and (max-width: 800px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -749,6 +748,12 @@
   .header .menuheader .botoncontacto:hover {
     background-color: #b9a7d5;
   }
+  .footercontainerindex {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
   .linkcontainer {
     display: flex;
     align-items: center;
@@ -835,5 +840,62 @@
     text-align: center;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .footercontainerindex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    top: 10rem;
+    flex-wrap: wrap;
+  }
+  .footercontainerindex .imagenfooterjuguetes {
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 2s;
+  }
+  .footercontainerindex .redescontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .footercontainerindex .redescontainer .imagenrrss {
+    width: 2rem;
+    height: 2rem;
+  }
+  .footercontainerindex .redescontainer .textorrss {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 0.5rem;
+    text-decoration: none;
+  }
+  .juguetesgrilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .juguetesgrilla .fotosjuguetes {
+    width: 100%;
+    justify-self: center;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    animation-name: cambiaropacidad;
+  }
+  .juguetesgrilla .fotosjuguetes:hover {
+    opacity: 0.5;
+  }
+  .juguetesgrilla .titulosjuguetes {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #f37d0e;
+    text-align: center;
+  }
+}
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles%20css.map */

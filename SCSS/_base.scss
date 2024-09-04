@@ -37,7 +37,7 @@
         justify-content: center;
         align-self: center;
         gap: $base-spacing;
-     }
+     
     
     .botonjuguetes {
         @include button-style(6rem, 2rem);
@@ -80,6 +80,7 @@
    
 }
 
+}
 }
 
 .tituloindex {
