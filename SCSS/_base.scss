@@ -121,10 +121,15 @@
     margin-top: 2rem;
 
 
-    .redestexto {
+    a {
         color: #f37d0e;
         text-decoration: none;
     }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
     }
 }
 
@@ -299,7 +304,10 @@
         .fotosjuguetes {
         width: 100%;
         justify-self: center;
-
+       
+        &:hover {
+            animation: cambiaropacidad 1s forwards;
+        }
         }
 
         .titulosjuguetes {

@@ -132,9 +132,12 @@
   border-radius: 5px;
   margin-top: 2rem;
 }
-.botonseguinosflex .botonseguinos .redestexto {
+.botonseguinosflex .botonseguinos a {
   color: #f37d0e;
   text-decoration: none;
+}
+.botonseguinosflex .botonseguinos:hover {
+  transform: scale(1.1);
 }
 
 .presentacioncle {
@@ -303,6 +306,9 @@
 .juguetescontainer .juguetesgrilla .fotosjuguetes {
   width: 100%;
   justify-self: center;
+}
+.juguetescontainer .juguetesgrilla .fotosjuguetes:hover {
+  animation: cambiaropacidad 1s forwards;
 }
 .juguetescontainer .juguetesgrilla .titulosjuguetes {
   font-family: "Quicksand", sans-serif;
