@@ -9,7 +9,9 @@
 
 * {
     scroll-behavior: smooth;
+    max-width: 100%;
    }
+
 
 .bodyindex {
     background-color: $bodyindex;
@@ -30,23 +32,31 @@
         bottom: 30px;
     }
 
-    .menuheader {
-        display: flex;
-        flex-wrap: wrap;
-        cursor: pointer;
-        justify-content: center;
-        align-self: center;
-        gap: $base-spacing;
-     }
+   
+     .listamenu {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    cursor: pointer;
+    gap: 0.5rem;
+
+    
+    a {
+        text-decoration: none; 
+        color: inherit; 
+    }
     
     .botonjuguetes {
         @include button-style(6rem, 2rem);
         background-color: $botonvermasjuguetes;
-        color: $coloroscuro;
+
+      
 
         &:hover {
             background-color: $bodyjuguetes;
           }
+
+
     }
 
 .botonnosotros {
@@ -77,10 +87,13 @@
     &:hover {
         background-color: $bodycontacto;
       }
-   
 }
 
+
+
 }
+}
+
 
 .tituloindex {
     @include title-font (center, 40px);
@@ -277,6 +290,31 @@
     margin: 0 auto;
     max-width: 1000px;
 
+    .juguetesgrilla {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        padding: 10px;
+    
+        .fotosjuguetes {
+        width: 100%;
+        justify-self: center;
+
+        }
+
+        .titulosjuguetes {
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 30px;
+            color: #d44401;
+            text-align: center;
+        }
+         
+    
+    }
+}
+    
+
     
     .vermascont2 {
             display: flex;
@@ -297,7 +335,7 @@
         }
         
     }
-    }
+    
     .bodynovedades {
         background-color: $bodynovedades;
     }

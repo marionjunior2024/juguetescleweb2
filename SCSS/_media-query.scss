@@ -1,5 +1,80 @@
 @media only screen and (max-width: 600px) {
-
+    .header {
+        @include flex-center (flex, center);
+            justify-content: space-between;
+            margin-right: 3rem;
+            margin-left: 3rem;
+        
+            .logoheader {
+                width: 200px;
+                height: 100px;
+                position: relative;
+                top: 10px;
+                bottom: 30px;
+            }
+        
+           
+             .listamenu {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 1rem;
+            cursor: pointer;
+            gap: 0.5rem;
+        
+            
+            a {
+                text-decoration: none; 
+                color: inherit; 
+            }
+            
+            .botonjuguetes {
+                @include button-style(6rem, 2rem);
+                background-color: $botonvermasjuguetes;
+        
+              
+        
+                &:hover {
+                    background-color: $bodyjuguetes;
+                  }
+        
+        
+            }
+        
+        .botonnosotros {
+            @include button-style(6rem, 2rem);
+            background-color: $botonnosotros;
+            color: $colorclaro;
+        
+            &:hover {
+                background-color: $bodynosotros;
+              }
+        }
+        
+        .botonnovedades {
+            @include button-style(6rem, 2rem);
+            background-color: $botonnovedades;
+            color: $colorclaro;
+        
+            &:hover {
+                background-color: $bodynovedades;
+              }
+        }
+        
+        .botoncontacto {
+            @include button-style(6rem, 2rem);
+            background-color: $botoncontacto;
+            color: $colorclaro;
+        
+            &:hover {
+                background-color: $bodycontacto;
+              }
+        }
+        
+        
+        
+        }
+        }
 
     .footercontainerindex {
         @include flex-center (flex, center);
@@ -36,120 +111,47 @@
             padding-left: 0.5rem;
             text-decoration: none;
         }
+        }   
+       
         }
+
+        .juguetescontainer {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 1000px;
+        
+            .juguetesgrilla {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                padding: 10px;
+            
+                .fotosjuguetes {
+                width: 100%;
+                justify-self: center;
+        
+                }
+        
+                .titulosjuguetes {
+                    font-family: $font-family-base;
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #d44401;
+                    text-align: center;
+                }
+                 
+            
+            }
         }
+
+
     
        
     
-        @media only screen and (min-width: 601px) and (max-width: 800px) {
-          
-            .footercontainerindex {
-                justify-content: center;
-                flex-direction: column;
-            }
-        
-            }
+       
 
-            .linkcontainer {
-                @include flex-center (flex,center);
-                gap: 5rem;
-                flex-wrap: wrap;
-                margin: 0 auto;
-                flex-direction: column;
-                justify-items: center;
-        
-                .imagenlink {
-                    width: 15rem;
-                    height: 10rem;
-                    object-fit: cover;
-                    border-radius: 0.5rem;
-                    border: 2px dotted $botonnovedades;
-                    border-style: 1rem;
-                }
-                .contenedortituloparrafo {
-                    background-color: #6e8daa;
-                    padding: 0.3rem;
-                    border-radius: 0.5rem;
-                }
-                
-                .subtitulolink {
-                    font-family: $font-family-base;
-                    font-weight: 600;
-                    font-size: 20px;
-                    color: #0b1eca;
-                    text-align: center;
-                
-                    margin-top: 1rem;
-                }
-                
-                .parrafolink {
-                    font-family: $colorclaro;
-                    font-optical-sizing: auto;
-                    font-weight: 600;
-                    font-size: 10px;
-                    color: $botonnovedades; 
-                    margin: 0 auto;
-                    text-align: justify-all;
-                    width: 12rem;
-                }
-                
-                .contenedorbtn {
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .btnlink {
-                    border: none;
-                    border-radius: 0.5rem;
-                    background-color: #12048d;
-                    color: $colorclaro;
-                    font-family: $font-family-base;
-                    font-weight: 600;
-                    font-size: 10px;
-                    text-align: center;
-                    padding: 0.5rem;
-                    width: 4rem;
-                    margin-top: 0.5rem;
-                    margin-bottom: 0.5rem;
-                    transition: transform 0.3s ease;
-        
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                
-                }
-                
-        }
 
-        .juguetesgrilla {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
-            padding: 10px;
-        
-                .fotosjuguetes {
-                   width: 100%;
-                   justify-self: center;
-                   opacity: 1; 
-                   transition: opacity 1s ease-in;
-                   animation-name: cambiaropacidad;
-                   
-                   &:hover {
-                    opacity: 0.5; 
-                  }
-        
-                        
-                    }
-                .titulosjuguetes {
-                        font-family: $font-family-base;
-                        font-weight: 600;
-                        font-size: 30px;
-                        color: #f37d0e;
-                        text-align: center;
-                
-                    }
-                     
-                }
     }
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
@@ -191,36 +193,36 @@
         }
         }
         }
-
-        .juguetesgrilla {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 10px;
-            padding: 10px;
+        .juguetescontainer {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 1000px;
         
+            .juguetesgrilla {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 10px;
+                padding: 10px;
+            
                 .fotosjuguetes {
-                   width: 100%;
-                   justify-self: center;
-                   opacity: 1; 
-                   transition: opacity 1s ease-in;
-                   animation-name: cambiaropacidad;
-                   
-                   &:hover {
-                    opacity: 0.5; 
-                  }
+                width: 100%;
+                justify-self: center;
         
-                        
-                    }
-                .titulosjuguetes {
-                        font-family: $font-family-base;
-                        font-weight: 600;
-                        font-size: 30px;
-                        color: #f37d0e;
-                        text-align: center;
-                
-                    }
-                     
                 }
+        
+                .titulosjuguetes {
+                    font-family: $font-family-base;
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #d44401;
+                    text-align: center;
+                }
+                 
+            
+            }
+        }
+       
     }
 
     
