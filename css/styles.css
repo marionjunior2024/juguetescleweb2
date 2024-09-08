@@ -36,7 +36,7 @@
   align-self: center;
   gap: 10px;
 }
-.header .menuheader .botonjuguetes {
+.header .botonjuguetes {
   width: 6rem;
   height: 2rem;
   font-family: "Quicksand", sans-serif;
@@ -49,10 +49,10 @@
   background-color: #ffc40c;
   color: #000000;
 }
-.header .menuheader .botonjuguetes:hover {
+.header .botonjuguetes:hover {
   background-color: #fff1ba;
 }
-.header .menuheader .botonnosotros {
+.header .botonnosotros {
   width: 6rem;
   height: 2rem;
   font-family: "Quicksand", sans-serif;
@@ -65,10 +65,10 @@
   background-color: #ac0010;
   color: #ffffff;
 }
-.header .menuheader .botonnosotros:hover {
+.header .botonnosotros:hover {
   background-color: #e6a0ab;
 }
-.header .menuheader .botonnovedades {
+.header .botonnovedades {
   width: 6rem;
   height: 2rem;
   font-family: "Quicksand", sans-serif;
@@ -81,10 +81,10 @@
   background-color: #12048d;
   color: #ffffff;
 }
-.header .menuheader .botonnovedades:hover {
+.header .botonnovedades:hover {
   background-color: #96c2eb;
 }
-.header .menuheader .botoncontacto {
+.header .botoncontacto {
   width: 6rem;
   height: 2rem;
   font-family: "Quicksand", sans-serif;
@@ -97,7 +97,7 @@
   background-color: #4c2882;
   color: #ffffff;
 }
-.header .menuheader .botoncontacto:hover {
+.header .botoncontacto:hover {
   background-color: #b9a7d5;
 }
 
@@ -258,6 +258,30 @@
   padding-left: 0.5rem;
   text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+  .footercontainerindex .redescontainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .footercontainerindex .redescontainer .footercontainerindex {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footercontainerindex {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .footercontainerindex .footercontainerindex {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 
 .desarrollado {
   display: flex;
@@ -291,12 +315,46 @@
   margin: 0 auto;
   max-width: 1000px;
 }
-.juguetescontainer .vermascont2 {
+.juguetescontainer .juguetesgrilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.juguetescontainer .juguetesgrilla .fotosjuguetes {
+  width: 100%;
+  justify-self: center;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  animation-name: cambiaropacidad;
+}
+.juguetescontainer .juguetesgrilla .fotosjuguetes:hover {
+  opacity: 0.5;
+}
+.juguetescontainer .juguetesgrilla .titulosjuguetes {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #f37d0e;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .juguetescontainer .juguetesgrilla {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .juguetescontainer .juguetesgrilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.vermascont2 {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
-.juguetescontainer .vermascont2 .volvertxt2 {
+.vermascont2 .volvertxt2 {
   width: 6rem;
   height: 2rem;
   font-family: "Quicksand", sans-serif;
@@ -312,7 +370,7 @@
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.juguetescontainer .vermascont2 .volvertxt2:hover {
+.vermascont2 .volvertxt2:hover {
   background-color: #95ceac;
 }
 
@@ -550,289 +608,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header .logoheader {
-    width: 200px;
-    height: 100px;
-    position: relative;
-    top: 10px;
-    bottom: 30px;
-  }
-  .header .menuheader {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .header .menuheader .botonjuguetes {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #ffc40c;
-    color: #000000;
-  }
-  .header .menuheader .botonjuguetes:hover {
-    background-color: #fff1ba;
-  }
-  .header .menuheader .botonnosotros {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #ac0010;
-    color: #ffffff;
-  }
-  .header .menuheader .botonnosotros:hover {
-    background-color: #e6a0ab;
-  }
-  .header .menuheader .botonnovedades {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #12048d;
-    color: #ffffff;
-  }
-  .header .menuheader .botonnovedades:hover {
-    background-color: #96c2eb;
-  }
-  .header .menuheader .botoncontacto {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #4c2882;
-    color: #ffffff;
-  }
-  .header .menuheader .botoncontacto:hover {
-    background-color: #b9a7d5;
-  }
-}
-.footercontainerindex {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  top: 10rem;
-  flex-wrap: wrap;
-}
-.footercontainerindex .imagenfooterjuguetes {
-  width: 8rem;
-  height: 8rem;
-  animation-delay: 2s;
-}
-.footercontainerindex .redescontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-}
-.footercontainerindex .redescontainer .imagenrrss {
-  width: 2rem;
-  height: 2rem;
-}
-.footercontainerindex .redescontainer .textorrss {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #000000;
-  padding-left: 0.5rem;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header .logoheader {
-    width: 200px;
-    height: 100px;
-    position: relative;
-    top: 10px;
-    bottom: 30px;
-  }
-  .header .menuheader {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .header .menuheader .botonjuguetes {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #ffc40c;
-    color: #000000;
-  }
-  .header .menuheader .botonjuguetes:hover {
-    background-color: #fff1ba;
-  }
-  .header .menuheader .botonnosotros {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #ac0010;
-    color: #ffffff;
-  }
-  .header .menuheader .botonnosotros:hover {
-    background-color: #e6a0ab;
-  }
-  .header .menuheader .botonnovedades {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #12048d;
-    color: #ffffff;
-  }
-  .header .menuheader .botonnovedades:hover {
-    background-color: #96c2eb;
-  }
-  .header .menuheader .botoncontacto {
-    width: 6rem;
-    height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #4c2882;
-    color: #ffffff;
-  }
-  .header .menuheader .botoncontacto:hover {
-    background-color: #b9a7d5;
-  }
   .linkcontainer {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    flex-wrap: wrap;
     margin: 0 auto;
     flex-direction: column;
     justify-items: center;
-  }
-  .linkcontainer .imagenlink {
-    width: 15rem;
-    height: 10rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    border: 2px dotted #12048d;
-    border-style: 1rem;
-  }
-  .linkcontainer .contenedortituloparrafo {
-    background-color: #6e8daa;
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-  }
-  .linkcontainer .subtitulolink {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #0b1eca;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .linkcontainer .parrafolink {
-    font-family: #ffffff;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 10px;
-    color: #12048d;
-    margin: 0 auto;
-    text-align: justify-all;
-    width: 12rem;
-  }
-  .linkcontainer .contenedorbtn {
-    display: flex;
-    justify-content: center;
-  }
-  .linkcontainer .btnlink {
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #12048d;
-    color: #ffffff;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 600;
-    font-size: 10px;
-    text-align: center;
-    padding: 0.5rem;
-    width: 4rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    transition: transform 0.3s ease;
-  }
-  .linkcontainer .btnlink:hover {
-    transform: scale(1.1);
-  }
-  .juguetesgrilla {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 10px;
-  }
-  .juguetesgrilla .fotosjuguetes {
-    width: 100%;
-    justify-self: center;
-    opacity: 1;
-    transition: opacity 1s ease-in;
-    animation-name: cambiaropacidad;
-  }
-  .juguetesgrilla .fotosjuguetes:hover {
-    opacity: 0.5;
-  }
-  .juguetesgrilla .titulosjuguetes {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    color: #f37d0e;
-    text-align: center;
   }
 }
 

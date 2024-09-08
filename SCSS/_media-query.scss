@@ -1,71 +1,5 @@
 @media only screen and (max-width: 600px) {
-    .header {
-            display: flex;
-            justify-content: space-between;
 
-
-        
-            .logoheader {
-                width: 200px;
-                height: 100px;
-                position: relative;
-                top: 10px;
-                bottom: 30px;
-            }
-        
-            .menuheader {
-                display: flex;
-                flex-direction: column;
-                cursor: pointer;
-
-                align-items: center;
-                gap: 0.5rem;
-             
-            
-            .botonjuguetes {
-                @include button-style(6rem, 2rem);
-                background-color: $botonvermasjuguetes;
-                color: $coloroscuro;
-        
-                &:hover {
-                    background-color: $bodyjuguetes;
-                  }
-            }
-        
-        .botonnosotros {
-            @include button-style(6rem, 2rem);
-            background-color: $botonnosotros;
-            color: $colorclaro;
-        
-            &:hover {
-                background-color: $bodynosotros;
-              }
-        }
-        
-        .botonnovedades {
-            @include button-style(6rem, 2rem);
-            background-color: $botonnovedades;
-            color: $colorclaro;
-        
-            &:hover {
-                background-color: $bodynovedades;
-              }
-        }
-        
-        .botoncontacto {
-            @include button-style(6rem, 2rem);
-            background-color: $botoncontacto;
-            color: $colorclaro;
-        
-            &:hover {
-                background-color: $bodycontacto;
-              }
-           
-        }
-        
-        }
-        }
-        }
 
     .footercontainerindex {
         @include flex-center (flex, center);
@@ -103,81 +37,18 @@
             text-decoration: none;
         }
         }
-
-        
-
         }
     
        
     
         @media only screen and (min-width: 601px) and (max-width: 800px) {
           
-            .header {
-                display: flex;
-                justify-content: space-between;
-     
-            
-                .logoheader {
-                    width: 200px;
-                    height: 100px;
-                    position: relative;
-                    top: 10px;
-                    bottom: 30px;
-                }
-            
-                .menuheader {
-                    display: flex;
-                    flex-direction: column;
-                    cursor: pointer;
-    
-                    align-items: center;
-                    gap: 0.5rem;
-                 
-                
-                .botonjuguetes {
-                    @include button-style(6rem, 2rem);
-                    background-color: $botonvermasjuguetes;
-                    color: $coloroscuro;
-            
-                    &:hover {
-                        background-color: $bodyjuguetes;
-                      }
-                }
-            
-            .botonnosotros {
-                @include button-style(6rem, 2rem);
-                background-color: $botonnosotros;
-                color: $colorclaro;
-            
-                &:hover {
-                    background-color: $bodynosotros;
-                  }
+            .footercontainerindex {
+                justify-content: center;
+                flex-direction: column;
             }
-            
-            .botonnovedades {
-                @include button-style(6rem, 2rem);
-                background-color: $botonnovedades;
-                color: $colorclaro;
-            
-                &:hover {
-                    background-color: $bodynovedades;
-                  }
+        
             }
-            
-            .botoncontacto {
-                @include button-style(6rem, 2rem);
-                background-color: $botoncontacto;
-                color: $colorclaro;
-            
-                &:hover {
-                    background-color: $bodycontacto;
-                  }
-               
-            }
-            
-            }
-            }
-    
 
             .linkcontainer {
                 @include flex-center (flex,center);
@@ -279,6 +150,82 @@
                     }
                      
                 }
-    
+    }
 
-            }
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  
+    .footercontainerindex {
+        @include flex-center (flex, center);
+        flex-direction: column;
+        justify-content:  center;
+        padding: 2rem;
+        top: 10rem;
+        flex-wrap: wrap;
+    
+        .imagenfooterjuguetes {
+            width: 8rem;
+            height: 8rem;
+            animation-delay: 2s;
+        }
+    
+        .redescontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content:  center;
+        gap: 2rem;
+    
+    
+        .imagenrrss {
+            width: 2rem;
+            height: 2rem;
+            
+        }
+        
+        .textorrss {
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 14px;
+            color:$coloroscuro;
+            padding-left: 0.5rem;
+            text-decoration: none;
+        }
+        }
+        }
+
+        .juguetesgrilla {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+            padding: 10px;
+        
+                .fotosjuguetes {
+                   width: 100%;
+                   justify-self: center;
+                   opacity: 1; 
+                   transition: opacity 1s ease-in;
+                   animation-name: cambiaropacidad;
+                   
+                   &:hover {
+                    opacity: 0.5; 
+                  }
+        
+                        
+                    }
+                .titulosjuguetes {
+                        font-family: $font-family-base;
+                        font-weight: 600;
+                        font-size: 30px;
+                        color: #f37d0e;
+                        text-align: center;
+                
+                    }
+                     
+                }
+    }
+
+    
+    
+         
+    
+      
+    
