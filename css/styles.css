@@ -1,9 +1,24 @@
+@charset "UTF-8";
 @keyframes cambiaropacidad {
   from {
     opacity: 1;
   }
   to {
     opacity: 0.5;
+  }
+}
+@keyframes animarGradiente {
+  0% {
+    background-position: 0% 0%;
+    background-image: linear-gradient(180deg, #ec8de0, #bdbdbd);
+  }
+  50% {
+    background-position: 100% 100%;
+    background-image: linear-gradient(180deg, #bdbdbd, #ec8de0);
+  }
+  100% {
+    background-position: 0% 0%;
+    background-image: linear-gradient(180deg, #ec8de0, #bdbdbd);
   }
 }
 * {
@@ -131,6 +146,7 @@
   padding-bottom: 10px;
   border-radius: 5px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .botonseguinosflex .botonseguinos a {
   color: #f37d0e;
@@ -167,6 +183,10 @@
 .presentacioncle .parrafojugarindex .palabrasdestacadas {
   font-weight: 700;
   color: #0f3518;
+}
+.presentacioncle .parrafojugarindex .palabrasdestacadas2 {
+  font-weight: 700;
+  color: #b4700a;
 }
 .presentacioncle .videocle {
   border: 3px solid #246633;
@@ -232,6 +252,19 @@
 }
 .vermascont .vermastxt:hover {
   background-color: #fff1ba;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  width: 5.5rem;
+  height: 5rem;
 }
 
 .footercontainerindex {
@@ -504,7 +537,9 @@
   padding: 20px;
   border: 1px solid #b27ac4;
   border-radius: 8px;
-  background-color: #cb96ee;
+  background-image: linear-gradient(180deg, #ec8de0, #bdbdbd);
+  background-size: 200% 200%; /* Hace que el gradiente se mueva */
+  animation: animarGradiente 8s ease infinite; /* Aplica la animación */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1019607843);
 }
 .container .h2form {
