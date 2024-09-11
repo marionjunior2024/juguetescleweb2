@@ -38,11 +38,8 @@
   margin-left: 3rem;
 }
 .header .logoheader {
-  width: 200px;
-  height: 100px;
-  position: relative;
-  top: 10px;
-  bottom: 30px;
+  width: 150px;
+  height: 150px;
 }
 .header .listamenu {
   display: flex;
@@ -620,11 +617,8 @@
     margin-left: 3rem;
   }
   .header .logoheader {
-    width: 200px;
-    height: 100px;
-    position: relative;
-    top: 10px;
-    bottom: 30px;
+    width: 150px;
+    height: 150px;
   }
   .header .listamenu {
     display: flex;
@@ -700,6 +694,44 @@
   }
   .header .listamenu .botoncontacto:hover {
     background-color: #b9a7d5;
+  }
+  .header .presentacioncle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+  }
+  .header .presentacioncle .imgsidebar {
+    width: 10rem;
+    border-radius: 1rem;
+  }
+  .header .presentacioncle .parrafojugarindex {
+    text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0e5e07;
+    width: 25rem;
+    margin: 2rem;
+  }
+  .header .presentacioncle .parrafojugarindex .jugar {
+    font-style: italic;
+  }
+  .header .presentacioncle .parrafojugarindex .palabrasdestacadas {
+    font-weight: 700;
+    color: #0f3518;
+  }
+  .header .presentacioncle .parrafojugarindex .palabrasdestacadas2 {
+    font-weight: 700;
+    color: #b4700a;
+  }
+  .header .presentacioncle .videocle {
+    border: 3px solid #246633;
+    border-radius: 5px;
+    width: 30rem;
   }
   .footercontainerindex {
     display: flex;

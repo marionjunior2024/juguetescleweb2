@@ -6,11 +6,9 @@
             margin-left: 3rem;
         
             .logoheader {
-                width: 200px;
-                height: 100px;
-                position: relative;
-                top: 10px;
-                bottom: 30px;
+                width: 150px;
+                height: 150px;
+
             }
         
            
@@ -74,6 +72,49 @@
         
         
         }
+        .presentacioncle {
+            @include flex-center (flex, center);
+            justify-content: center;
+            top: 2rem;
+            gap: 5rem;
+            flex-wrap: wrap;
+        
+           .imgsidebar {
+            width: 10rem;
+            border-radius: 1rem;
+           }
+        
+           .parrafojugarindex {
+            text-align: justify;
+            font-family: $font-family-base;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-size: 20px;
+            color: $botonvolver;
+            width: 25rem;
+            margin: 2rem;
+        
+            .jugar {
+                font-style: italic;
+            }
+            .palabrasdestacadas {
+                font-weight: 700;
+                color: #0f3518;
+            }
+            .palabrasdestacadas2 {
+                font-weight: 700;
+                color: #b4700a;
+            }
+        
+           }
+        .videocle {
+            border: 3px solid #246633;
+            border-radius: 5px;
+            width: 30rem;
+        }
+        
+        }
+
         }
 
     .footercontainerindex {
