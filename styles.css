@@ -388,21 +388,15 @@
 
 .linkcontainer {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
-  gap: 5rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 5rem;
+  margin: auto;
 }
 .linkcontainer .imagenlink {
-  width: 15rem;
-  height: 10rem;
   object-fit: cover;
   border-radius: 0.5rem;
   border: 2px dotted #12048d;
-  border-style: 1rem;
 }
 .linkcontainer .contenedortituloparrafo {
   background-color: #6e8daa;
@@ -412,24 +406,18 @@
 .linkcontainer .subtitulolink {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #0b1eca;
   text-align: center;
   margin-top: 1rem;
 }
 .linkcontainer .parrafolink {
-  font-family: #ffffff;
-  font-optical-sizing: auto;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 0.875rem;
   color: #12048d;
   margin: 0 auto;
-  text-align: justify-all;
-  width: 12rem;
-}
-.linkcontainer .contenedorbtn {
-  display: flex;
-  justify-content: center;
+  text-align: justify;
 }
 .linkcontainer .btnlink {
   border: none;
@@ -438,12 +426,11 @@
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 0.875rem;
   text-align: center;
   padding: 0.5rem;
   width: 4rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem auto;
   transition: transform 0.3s ease;
 }
 .linkcontainer .btnlink:hover {
