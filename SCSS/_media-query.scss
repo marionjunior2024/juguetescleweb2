@@ -1,4 +1,15 @@
+@keyframes cambiaropacidad {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
 @media only screen and (max-width: 600px) {
+
+
     .header {
         @include flex-center (flex, center);
             justify-content: space-between;
@@ -169,10 +180,13 @@
                 padding: 10px;
             
                 .fotosjuguetes {
-                width: 100%;
-                justify-self: center;
-        
-                }
+                    width: 100%;
+                    justify-self: center;
+                   
+                    &:hover {
+                        animation: cambiaropacidad 1s forwards;
+                    }
+                    }
         
                 .titulosjuguetes {
                     font-family: $font-family-base;
@@ -247,10 +261,13 @@
                 padding: 10px;
             
                 .fotosjuguetes {
-                width: 100%;
-                justify-self: center;
-        
-                }
+                    width: 100%;
+                    justify-self: center;
+                   
+                    &:hover {
+                        animation: cambiaropacidad 1s forwards;
+                    }
+                    }
         
                 .titulosjuguetes {
                     font-family: $font-family-base;
