@@ -388,15 +388,21 @@
 
 .linkcontainer {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 5rem;
   flex-wrap: wrap;
-  margin: auto;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
 }
 .linkcontainer .imagenlink {
+  width: 15rem;
+  height: 10rem;
   object-fit: cover;
   border-radius: 0.5rem;
   border: 2px dotted #12048d;
+  border-style: 1rem;
 }
 .linkcontainer .contenedortituloparrafo {
   background-color: #6e8daa;
@@ -426,11 +432,12 @@
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 10px;
   text-align: center;
   padding: 0.5rem;
   width: 4rem;
-  margin: 0.5rem auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
 }
 .linkcontainer .btnlink:hover {
@@ -785,6 +792,61 @@
     font-size: 30px;
     color: #d44401;
     text-align: center;
+  }
+  .linkcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  .linkcontainer .imagenlink {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 2px dotted #12048d;
+    border-style: 1rem;
+  }
+  .linkcontainer .contenedortituloparrafo {
+    background-color: #6e8daa;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+  }
+  .linkcontainer .subtitulolink {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #0b1eca;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .linkcontainer .parrafolink {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #12048d;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .linkcontainer .btnlink {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #12048d;
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    padding: 0.5rem;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  .linkcontainer .btnlink:hover {
+    transform: scale(1.1);
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {

@@ -199,7 +199,70 @@
             
             }
         }
+        .linkcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 5rem;
+            flex-wrap: wrap;
 
+            margin-top: 5rem;
+    
+        .imagenlink {
+            width: 15rem;
+            height: 10rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 2px dotted #12048d;
+            border-style: 1rem;
+        }
+    
+        .contenedortituloparrafo {
+            background-color: #6e8daa;
+            padding: 0.3rem;
+            border-radius: 0.5rem;
+        }
+    
+        .subtitulolink {
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 1.25rem; 
+            color: #0b1eca;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    
+        .parrafolink {
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 0.875rem; 
+            color: $botonnovedades;
+            margin: 0 auto;
+            text-align: justify;
+        }
+    
+    
+    
+        .btnlink {
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #12048d;
+            color: #ffffff;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+            text-align: center;
+            padding: 0.5rem;
+            width: 4rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        }
     
   
 }

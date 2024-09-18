@@ -386,16 +386,22 @@
     }
 
     .linkcontainer {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem; 
-    flex-wrap: wrap;
-    margin: auto; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5rem;
+        flex-wrap: wrap;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
 
     .imagenlink {
+        width: 15rem;
+        height: 10rem;
         object-fit: cover;
         border-radius: 0.5rem;
-        border: 2px dotted $botonnovedades;
+        border: 2px dotted #12048d;
+        border-style: 1rem;
     }
 
     .contenedortituloparrafo {
@@ -428,16 +434,17 @@
         border: none;
         border-radius: 0.5rem;
         background-color: #12048d;
-        color: $colorclaro;
-        font-family: $font-family-base;
+        color: #ffffff;
+        font-family: "Quicksand", sans-serif;
         font-weight: 600;
-        font-size: 0.875rem; // Usa unidades relativas
+        font-size: 10px;
         text-align: center;
         padding: 0.5rem;
         width: 4rem;
-        margin: 0.5rem auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         transition: transform 0.3s ease;
-
+        
         &:hover {
             transform: scale(1.1);
         }
