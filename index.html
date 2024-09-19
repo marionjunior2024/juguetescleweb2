@@ -18,17 +18,30 @@
 </head>
 <body class="bodyindex">
 <header>    
-    <section class="header">
-    <div class="logoheader animate__animated animate__rubberBand"><img src="./imagenes/logocle.png" alt="Logo cle"></div>
-    <nav>
-        <ul class="listamenu">
-        <li class="botonjuguetes"><a  href="./pages/juguetes.html">JUGUETES</a></li>
-        <li class="botonnosotros"><a  href="./pages/nosotros.html">NOSOTROS</a></li>
-        <li class="botonnovedades"><a href="./pages/novedades.html">NOVEDADES</a></li>
-        <li class="botoncontacto"><a href="./pages/contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-    </section>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand animate__animated animate__rubberBand"  href="#"><img src="./imagenes/logocle.png" alt="Logo" width="80" height="74" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav gap-2 ms-auto"> 
+              <li class="nav-item navbarjuguetes">
+                <a class="nav-link text-dark" href="./pages/juguetes.html">JUGUETES</a>
+              </li>
+              <li class="nav-item navbarnosotros">
+                <a class="nav-link text-light" href="./pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item navbarnovedades">
+                <a class="nav-link text-light" href="./pages/novedades.html">NOVEDADES</a>
+              </li>
+              <li class="nav-item navbarcontacto">
+                <a class="nav-link text-light"  href="./pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <main>    
