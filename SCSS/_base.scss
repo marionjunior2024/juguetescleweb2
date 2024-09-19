@@ -29,13 +29,15 @@
 
 .bodyindex {
     background-color: $bodyindex;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .navbar-collapse {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea los ítems hacia la izquierda por defecto */
-    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    align-items: flex-start;
+    width: 100%; 
   }
 
 .navbarjuguetes {
@@ -226,10 +228,11 @@
 
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 1000; 
+    bottom: 10rem; 
+    right: 10rem; 
     cursor: pointer;
+    z-index: 1000;
+
 }
 
 .whatsapp-button img {
@@ -293,6 +296,8 @@
 
 .bodyjuguetes {
     background-color: $bodyjuguetes;
+    overflow-x: hidden;
+    max-width: 100%
 }
 
 .titulojuguetes {
@@ -358,6 +363,8 @@
     
     .bodynovedades {
         background-color: $bodynovedades;
+        max-width: 100%;
+        overflow-x:hidden;
     }
     .titulonovedades {
         @include title-font (center, 40px);
@@ -433,6 +440,8 @@
    }
     .bodynosotros {
         background-color: $bodynosotros;
+        overflow-x: hidden;
+        max-width: 100%;
     }
 
     .titulonosotros {
@@ -480,6 +489,8 @@
 
     .bodycontacto {
         background-color: $bodycontacto;
+        overflow-x: hidden;
+        max-width: 100%
     }
 
     .titulocontacto {
